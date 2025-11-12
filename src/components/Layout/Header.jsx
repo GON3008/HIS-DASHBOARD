@@ -31,9 +31,10 @@ const Header = ({ toggleSidebar, sidebarOpen }) => {
     <header className="bg-white dark:bg-gray-800 shadow-sm h-16 flex items-center justify-between px-6">
       {/* Left side */}
       <div className="flex items-center space-x-4">
+        {/* Hide sidebar toggle on mobile; BottomNav is used there */}
         <button
           onClick={toggleSidebar}
-          className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          className="hidden md:inline-flex p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
           aria-label="Toggle sidebar"
         >
           <Menu className="w-6 h-6 text-gray-600 dark:text-gray-300" />
