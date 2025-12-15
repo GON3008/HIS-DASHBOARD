@@ -193,14 +193,6 @@ npm run preview
 npm run lint
 ```
 
-## 🔐 Authentication
-
-Hiện tại project chưa có authentication. Để thêm authentication:
-
-1. Cập nhật `src/services/api.js` để xử lý token
-2. Tạo login page và auth context
-3. Protect routes với authentication guard
-
 ## 📱 Responsive Design
 
 Dashboard được thiết kế responsive và hoạt động tốt trên:
